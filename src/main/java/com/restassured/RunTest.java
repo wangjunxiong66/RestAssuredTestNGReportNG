@@ -15,7 +15,7 @@ public class RunTest {
     @BeforeClass
     public void setUp() {
         //   请求IP
-        RestAssured.baseURI = "https://*********";
+        RestAssured.baseURI = "https://******";
         RestAssured.basePath = "/";
 //        RestAssured.port = 8080;
         //在多数场景下，SSL能顺利运转，这多亏于HTTP Builder和HTTP Client。如果服务端使用了无效的证书，然而有些例子下还是会出错。最简单的方法是使用"relaxed HTTPs validation",也可以为所有的请求静态定义这个配置：

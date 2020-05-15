@@ -8,7 +8,22 @@
     <artifactId>restassuredtestngreportng</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.8.RELEASE</version>
+    </parent>
+
+
+
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <!--<version>2.2.6.RELEASE</version>-->
+        </dependency>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -55,9 +70,13 @@
             <artifactId>guice</artifactId>
             <version>4.2.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.1.8.RELEASE</version>
+        </dependency>
 
     </dependencies>
-
 
     <build>
         <plugins>
@@ -94,11 +113,6 @@
                     <forkMode>always</forkMode>
                 </configuration>
             </plugin>
-
-
-
         </plugins>
     </build>
-
-
 </project>

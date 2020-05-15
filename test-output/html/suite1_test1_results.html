@@ -12,7 +12,7 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 2.458s
+  Test duration: 4.644s
 </p>
 
 
@@ -28,22 +28,122 @@
                   runCases
       </td>
   <td class="duration">
-    0.188s
+    3.839s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"case003", "", "true", "Y", "", "", "", ""</span><br />
+          <i>Method arguments: </i><span class="arguments">"case001", "接口", "true", "Y", "N", "api/xjwd/index", "1", "1"</span><br />
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.net.UnknownHostException: ******: nodename nor servname provided, or not known</b></a><br />
     <div class="stackTrace" id="exception-0">
-              io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:986)<br />
-              io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)<br />
-              io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)<br />
-              io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br />
-              io.restassured.path.json.JsonPath.getInt(JsonPath.java:237)<br />
-              com.restassured.RunTest.runCases(RunTest.java:62)<br />
+              java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)<br />
+              java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)<br />
+              java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)<br />
+              java.net.InetAddress.getAllByName0(InetAddress.java:1277)<br />
+              java.net.InetAddress.getAllByName(InetAddress.java:1193)<br />
+              java.net.InetAddress.getAllByName(InetAddress.java:1127)<br />
+              org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)<br />
+              org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)<br />
+              org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)<br />
+              org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)<br />
+              org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)<br />
+              org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)<br />
+              org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)<br />
+              org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)<br />
+              org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)<br />
+              org.apache.http.client.HttpClient$execute$0.call(Unknown Source)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)<br />
+              io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2146)<br />
+              io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)<br />
+              io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)<br />
+              io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:151)<br />
+              io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1544)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)<br />
+              io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1293)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:151)<br />
+              io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)<br />
+              io.restassured.filter.Filter$filter$0.call(Unknown Source)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              io.restassured.filter.Filter$filter.call(Unknown Source)<br />
+              io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)<br />
+              io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)<br />
+              io.restassured.filter.Filter$filter.call(Unknown Source)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:143)<br />
+              io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)<br />
+              io.restassured.filter.FilterContext$next.call(Unknown Source)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)<br />
+              io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1749)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)<br />
+              io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1755)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)<br />
+              io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)<br />
+              io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)<br />
+              com.restassured.RunTest.runCases(RunTest.java:53)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -68,46 +168,7 @@
               org.testng.TestNG.run(TestNG.java:1017)<br />
               org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
               org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.</a><br />
-        <div class="stackTrace" id="exception-1">
-                      groovy.json.JsonLexer.nextToken(JsonLexer.java:87)<br />
-                      groovy.json.JsonLexer$nextToken.call(Unknown Source)<br />
-                      io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)<br />
-                      io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)<br />
-                      io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)<br />
-                      io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:949)<br />
-                      io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:984)<br />
-                      io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)<br />
-                      io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)<br />
-                      io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br />
-                      io.restassured.path.json.JsonPath.getInt(JsonPath.java:237)<br />
-                      com.restassured.RunTest.runCases(RunTest.java:62)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:498)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-                      org.testng.TestRunner.run(TestRunner.java:505)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-                      org.testng.TestNG.run(TestNG.java:1017)<br />
-                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
-                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                  </div>
-          </div>
+                </div>
       </td>
 </tr>
 <tr>
@@ -115,22 +176,101 @@
                   runCases
       </td>
   <td class="duration">
-    1.387s
+    0.012s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"case001", "接口", "true", "Y", "N", "this/is/interface", "1", "1"</span><br />
+          <i>Method arguments: </i><span class="arguments">"case003", "", "true", "Y", "", "this/is/interface", "", ""</span><br />
     
         
 
-        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document</b></a><br />
-    <div class="stackTrace" id="exception-2">
-              io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:986)<br />
-              io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)<br />
-              io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)<br />
-              io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br />
-              io.restassured.path.json.JsonPath.getInt(JsonPath.java:237)<br />
-              com.restassured.RunTest.runCases(RunTest.java:62)<br />
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.net.UnknownHostException: ******</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              java.net.InetAddress.getAllByName0(InetAddress.java:1281)<br />
+              java.net.InetAddress.getAllByName(InetAddress.java:1193)<br />
+              java.net.InetAddress.getAllByName(InetAddress.java:1127)<br />
+              org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)<br />
+              org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)<br />
+              org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)<br />
+              org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)<br />
+              org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)<br />
+              org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)<br />
+              org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)<br />
+              org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)<br />
+              org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)<br />
+              org.apache.http.client.HttpClient$execute$0.call(Unknown Source)<br />
+              io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2146)<br />
+              io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)<br />
+              io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)<br />
+              io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)<br />
+              io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1544)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)<br />
+              io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1293)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:151)<br />
+              io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)<br />
+              io.restassured.filter.Filter$filter$0.call(Unknown Source)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              io.restassured.filter.Filter$filter.call(Unknown Source)<br />
+              io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)<br />
+              io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)<br />
+              io.restassured.filter.Filter$filter.call(Unknown Source)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              io.restassured.filter.Filter$filter$0.call(Unknown Source)<br />
+              io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)<br />
+              io.restassured.filter.FilterContext$next.call(Unknown Source)<br />
+              io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1749)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)<br />
+              io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1755)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)<br />
+              io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)<br />
+              io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)<br />
+              com.restassured.RunTest.runCases(RunTest.java:53)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -155,52 +295,7 @@
               org.testng.TestNG.run(TestNG.java:1017)<br />
               org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
               org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.</a><br />
-        <div class="stackTrace" id="exception-3">
-                      groovy.json.JsonLexer.nextToken(JsonLexer.java:87)<br />
-                      groovy.json.JsonLexer$nextToken.call(Unknown Source)<br />
-                      org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
-                      org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)<br />
-                      org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)<br />
-                      io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)<br />
-                      io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)<br />
-                      org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)<br />
-                      org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)<br />
-                      org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)<br />
-                      io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)<br />
-                      io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:949)<br />
-                      io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:984)<br />
-                      io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)<br />
-                      io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)<br />
-                      io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br />
-                      io.restassured.path.json.JsonPath.getInt(JsonPath.java:237)<br />
-                      com.restassured.RunTest.runCases(RunTest.java:62)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:498)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-                      org.testng.TestRunner.run(TestRunner.java:505)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-                      org.testng.TestNG.run(TestNG.java:1017)<br />
-                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
-                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                  </div>
-          </div>
+                </div>
       </td>
 </tr>
 <tr>
@@ -208,7 +303,7 @@
                   runCases
       </td>
   <td class="duration">
-    0.198s
+    0.010s
   </td>
   <td class="result">
         
@@ -216,14 +311,93 @@
     
         
 
-        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document</b></a><br />
-    <div class="stackTrace" id="exception-4">
-              io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:986)<br />
-              io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)<br />
-              io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)<br />
-              io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br />
-              io.restassured.path.json.JsonPath.getInt(JsonPath.java:237)<br />
-              com.restassured.RunTest.runCases(RunTest.java:62)<br />
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.net.UnknownHostException: ******</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              java.net.InetAddress.getAllByName0(InetAddress.java:1281)<br />
+              java.net.InetAddress.getAllByName(InetAddress.java:1193)<br />
+              java.net.InetAddress.getAllByName(InetAddress.java:1127)<br />
+              org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)<br />
+              org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)<br />
+              org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)<br />
+              org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)<br />
+              org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)<br />
+              org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)<br />
+              org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)<br />
+              org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)<br />
+              org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)<br />
+              org.apache.http.client.HttpClient$execute$0.call(Unknown Source)<br />
+              io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2146)<br />
+              io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)<br />
+              io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)<br />
+              io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)<br />
+              io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1544)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)<br />
+              io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1293)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:151)<br />
+              io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)<br />
+              io.restassured.filter.Filter$filter$0.call(Unknown Source)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              io.restassured.filter.Filter$filter.call(Unknown Source)<br />
+              io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)<br />
+              io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)<br />
+              io.restassured.filter.Filter$filter.call(Unknown Source)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)<br />
+              io.restassured.filter.Filter$filter$0.call(Unknown Source)<br />
+              io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)<br />
+              io.restassured.filter.FilterContext$next.call(Unknown Source)<br />
+              io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1749)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)<br />
+              io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1755)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)<br />
+              groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)<br />
+              groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)<br />
+              io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)<br />
+              org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)<br />
+              io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)<br />
+              io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)<br />
+              com.restassured.RunTest.runCases(RunTest.java:53)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -248,46 +422,7 @@
               org.testng.TestNG.run(TestNG.java:1017)<br />
               org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
               org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse">groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.</a><br />
-        <div class="stackTrace" id="exception-5">
-                      groovy.json.JsonLexer.nextToken(JsonLexer.java:87)<br />
-                      groovy.json.JsonLexer$nextToken.call(Unknown Source)<br />
-                      io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)<br />
-                      io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)<br />
-                      io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)<br />
-                      io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:949)<br />
-                      io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:984)<br />
-                      io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)<br />
-                      io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)<br />
-                      io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br />
-                      io.restassured.path.json.JsonPath.getInt(JsonPath.java:237)<br />
-                      com.restassured.RunTest.runCases(RunTest.java:62)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:498)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-                      org.testng.TestRunner.run(TestRunner.java:505)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-                      org.testng.TestNG.run(TestNG.java:1017)<br />
-                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
-                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                  </div>
-          </div>
+                </div>
       </td>
 </tr>
       </table>
